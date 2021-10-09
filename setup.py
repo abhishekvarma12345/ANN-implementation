@@ -11,7 +11,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/abhishekvarma12345/ANN-implementation",
-    author_email="sunny.c17hawke@gmail.com",
+    author_email="abhishekvarmad@gmail.com",
     packages=["src"],
     python_requires=">=3.7",
     install_requires=[
