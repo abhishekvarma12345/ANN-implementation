@@ -1,6 +1,8 @@
 import tensorflow as tf
+import logging
 
 def get_data(validation_datasize):
+    logging.info("splitting tha mnist data into train, test and validation datasets")
     mnist = tf.keras.datasets.mnist
     (X_train_full,y_train_full),(X_test,y_test)= mnist.load_data()
     X_valid, X_train = X_train_full[:validation_datasize]/255., X_train_full[validation_datasize:]/255.
