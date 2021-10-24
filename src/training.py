@@ -37,7 +37,7 @@ def training(config_path):
 
     history = model.fit(X_train, y_train, 
               validation_data=VALIDATION_SET, 
-              epochs=EPOCHS)
+              epochs=EPOCHS, callbacks=CALLBACK_LIST)
     logging.info("ANN trained and validated successfully")
 
     artifacts_dir = config["artifacts"]["artifacts_dir"]
